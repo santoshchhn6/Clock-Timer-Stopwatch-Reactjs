@@ -35,6 +35,9 @@ Click on 'Start' to start timer.
 
 ![timer_started](https://user-images.githubusercontent.com/102342620/209476900-6ff8c39f-fa68-4bc3-a99b-cfa5128d407f.png)
 
+## StopWatch
+![stopwatch](https://user-images.githubusercontent.com/102342620/209477459-0f2f3125-b3d5-475b-b1b2-48511f9ebdf8.png)
+
 
 
 
