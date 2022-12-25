@@ -66,7 +66,7 @@ class Stopwatch extends React.Component {
               <h1 className="time">{stopWatchTime}</h1>
             </div>
             <div>
-              <StopWatch_button
+              <StopWatchButton
                 onStart={this.handleStartTimer}
                 onReset={this.handleResetTimer}
                 onPause={this.handlePauseTimer}
@@ -76,7 +76,7 @@ class Stopwatch extends React.Component {
               />
             </div>
             <div>
-              <StopWatch_loop_list loops={this.state.loops} />
+              <StopWatchLoopList loops={this.state.loops} />
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@ class Stopwatch extends React.Component {
   }
 }
 
-class StopWatch_button extends React.Component {
+class StopWatchButton extends React.Component {
   onClickPause = () => {
     if (this.props.runningSince > 0) {
       this.props.onPause();
@@ -112,7 +112,7 @@ class StopWatch_button extends React.Component {
   }
 }
 
-class StopWatch_loop_list extends React.Component {
+class StopWatchLoopList extends React.Component {
   render() {
     return (
       <div className="stopwatch_loop_container">

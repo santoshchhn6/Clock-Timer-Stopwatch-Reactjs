@@ -30,6 +30,7 @@ button {
 button:hover {
   background: rgb(235, 235, 235);
   color: rgb(77, 77, 77);
+  cursor: pointer;
 }
 
 .btn_container {
@@ -37,7 +38,7 @@ button:hover {
   border-radius: 15px;
   border: 1px solid gray;
   overflow: hidden;
-  margin: 5px auto;
+  margin: 15px auto;
 }
 
 .time {
@@ -54,10 +55,6 @@ select {
   -moz-appearance: none;
   text-indent: 1px;
   text-overflow: "";
-}
-
-select::-ms-expand {
-  display: none;
 }
 
 .active {

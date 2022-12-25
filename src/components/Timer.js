@@ -22,18 +22,24 @@ class Timer extends React.Component {
   };
 
   handleStartTimer = () => {
-    const waitTime =
-      3600000 * this.state.hours +
-      60000 * this.state.minutes +
-      1000 * this.state.seconds;
+    if (
+      this.state.hours !== 0 ||
+      this.state.minutes !== 0 ||
+      this.state.seconds !== 0
+    ) {
+      const waitTime =
+        3600000 * this.state.hours +
+        60000 * this.state.minutes +
+        1000 * this.state.seconds;
 
-    const now = Date.now();
+      const now = Date.now();
 
-    this.setState({
-      timerShow: true,
-      waitTime: waitTime,
-      runningSince: now,
-    });
+      this.setState({
+        timerShow: true,
+        waitTime: waitTime,
+        runningSince: now,
+      });
+    }
   };
   handleResetTimer = () => {
     this.setState({
