@@ -51,7 +51,8 @@ Click on "Pause" and then "Reset" will appear, Then click on "Reset".
 ![stopwatch](https://user-images.githubusercontent.com/102342620/209561619-c0a18d66-1250-44a6-aa2a-0b046059f5cb.png)
 
 
-### Loop 
+### Loop Stopwatch Timer
+Click on 'Loop' Button to loop timer.
 
 ![stopwatch_loop](https://user-images.githubusercontent.com/102342620/209561673-996c973f-d50a-4883-81d8-831bd6c038dc.png)
 
