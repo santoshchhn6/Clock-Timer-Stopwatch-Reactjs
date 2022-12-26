@@ -36,7 +36,30 @@ Click on 'Start' to start timer.
 ![timer_started](https://user-images.githubusercontent.com/102342620/209476900-6ff8c39f-fa68-4bc3-a99b-cfa5128d407f.png)
 
 ## StopWatch
+### Start Stopwatch
+Click on 'Start' Button to start timer.
+
 ![stopwatch](https://user-images.githubusercontent.com/102342620/209477459-0f2f3125-b3d5-475b-b1b2-48511f9ebdf8.png)
+
+### Reset Stopwatch
+Click on "Pause" and then "Reset" will appear, Then click on "Reset".
+
+![stopwatch_pause](https://user-images.githubusercontent.com/102342620/209561528-9160ceab-34e7-4d7e-88cc-3c331b60b405.png)
+
+![stopwatch_reset](https://user-images.githubusercontent.com/102342620/209561540-59ef8417-9250-4907-b70d-27723a6a611f.png)
+
+![stopwatch](https://user-images.githubusercontent.com/102342620/209561619-c0a18d66-1250-44a6-aa2a-0b046059f5cb.png)
+
+
+### Loop 
+
+![stopwatch_loop](https://user-images.githubusercontent.com/102342620/209561673-996c973f-d50a-4883-81d8-831bd6c038dc.png)
+
+
+
+
+
+
 
 
 
