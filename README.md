@@ -1,4 +1,5 @@
 # Clock-Timer-Stopwatch
+![clock](https://user-images.githubusercontent.com/102342620/209476600-f1fc9eac-b2e5-417f-89a6-94e28f6f3620.png)
 
 ## Install Dependencies
 ```
