@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/Clock.css";
-import millisecondsToHuman, { date } from "../millisecondToHuman";
+import { millisecondsToHuman, date } from "../timeFormat";
 
 const weekDays = [
   "Sunday",

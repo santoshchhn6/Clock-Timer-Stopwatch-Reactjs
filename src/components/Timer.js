@@ -1,6 +1,11 @@
 import React from "react";
 import "../css/Timer.css";
-import { elapsedTime, pad, remainingTime } from "../millisecondToHuman";
+import {
+  elapsedTime,
+  pad,
+  remainingTime,
+  millisecondsToHuman,
+} from "../timeFormat";
 
 const createOptions = (options) => {
   let opt = [];
@@ -89,6 +94,9 @@ class Timer extends React.Component {
             setHours={this.handleSetHours}
             setMinutes={this.handleSetMinutes}
             setSeconds={this.handleSetSeconds}
+            hours={this.state.hours}
+            minutes={this.state.minutes}
+            seconds={this.state.seconds}
           />
         );
       }
@@ -97,6 +105,9 @@ class Timer extends React.Component {
 }
 
 class RunningTimer extends React.Component {
+  state = {
+    showAlert: false,
+  };
   componentDidMount() {
     this.forceUpdateInterval = setInterval(() => this.forceUpdate(), 50);
   }
@@ -112,16 +123,23 @@ class RunningTimer extends React.Component {
   };
   render() {
     const btnTogglePauseStart = this.props.runningSince > 0 ? "Pause" : "Start";
-    const timerStr = remainingTime(
+    const rtime = remainingTime(
       this.props.waitTime,
       elapsedTime(this.props.elapsed, this.props.runningSince)
     );
 
+    if (this.props.runningSince > 0 && rtime === 0 && !this.state.showAlert) {
+      alert("Timer Out");
+      this.props.onResetTimer();
+      this.setState({
+        showAlert: true,
+      });
+    }
     return (
       <div className="container">
         <div>
           <div>
-            <h1 className="time timer_clock">{timerStr}</h1>
+            <h1 className="time timer_clock">{millisecondsToHuman(rtime)}</h1>
           </div>
           <div className="btn_container">
             <button onClick={this.onClickPause}>{btnTogglePauseStart}</button>
@@ -135,6 +153,11 @@ class RunningTimer extends React.Component {
 
 class TimerSelect extends React.Component {
   render() {
+    let toggleBtnSelectStart =
+      this.props.hours > 0 || this.props.minutes > 0 || this.props.seconds > 0
+        ? "Start"
+        : "Select";
+
     return (
       <div className="container">
         <div>
@@ -159,7 +182,9 @@ class TimerSelect extends React.Component {
             </select>
           </div>
           <div className="btn_container">
-            <button onClick={this.props.onStartTimer}>Start</button>
+            <button onClick={this.props.onStartTimer}>
+              {toggleBtnSelectStart}
+            </button>
           </div>
         </div>
       </div>

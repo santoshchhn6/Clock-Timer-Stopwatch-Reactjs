@@ -3,7 +3,7 @@ export function remainingTime(waitTime, elapsedTime) {
   if (remain < 0) {
     remain = 0;
   }
-  return millisecondsToHuman(remain);
+  return remain;
 }
 
 export function elapsedTime(elapsed, runningSince) {
@@ -14,7 +14,7 @@ export function elapsedTime(elapsed, runningSince) {
   return totalElaped;
 }
 
-function millisecondsToHuman(ms) {
+export function millisecondsToHuman(ms) {
   let seconds = Math.floor((ms / 1000) % 60);
   let minutes = Math.floor((ms / 1000 / 60) % 60);
   let hours = Math.floor((ms / 1000 / 60 / 60) % 24);
@@ -54,5 +54,3 @@ export function pad(numberString, size) {
   while (padded.length < size) padded = `0${padded}`;
   return padded;
 }
-
-export default millisecondsToHuman;

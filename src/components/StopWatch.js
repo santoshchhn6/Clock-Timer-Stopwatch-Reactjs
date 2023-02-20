@@ -1,9 +1,6 @@
 import React from "react";
 import "../css/StopWatch.css";
-import millisecondsToHuman, {
-  elapsedTime,
-  stopWatchTimer,
-} from "../millisecondToHuman";
+import { elapsedTime, stopWatchTimer } from "../timeFormat";
 const INITIAL_STATE = {
   runningSince: 0,
   elapsed: 0,
