@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Clock-Timer-Stopwatch-Reactjs/static/css/main.76a15281.css",
+    "main.js": "/Clock-Timer-Stopwatch-Reactjs/static/js/main.5021e92b.js",
+    "index.html": "/Clock-Timer-Stopwatch-Reactjs/index.html",
+    "main.76a15281.css.map": "/Clock-Timer-Stopwatch-Reactjs/static/css/main.76a15281.css.map",
+    "main.5021e92b.js.map": "/Clock-Timer-Stopwatch-Reactjs/static/js/main.5021e92b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76a15281.css",
+    "static/js/main.5021e92b.js"
+  ]
+}
